@@ -17,6 +17,8 @@ const Header = ({
   showSearch,
   setSearch,
   addSubscriptionBtn,
+  addCategoryBtn,
+  addInterestBtn,
 }) => {
   //? useDispatch
   let dispatch = useDispatch();
@@ -42,12 +44,32 @@ const Header = ({
             placeholder="Search"
           />
         )}
-
+        {/* //? Subscription */}
         <div>
           {addSubscriptionBtn && (
             <Tooltip title="Add Subscription Plan">
-              <IconButton aria-label="delete">
-                <BsPlusLg onClick={() => history.push(addSubscriptionBtn)} />
+              <IconButton onClick={() => history.push(addSubscriptionBtn)}>
+                <BsPlusLg />
+              </IconButton>
+            </Tooltip>
+          )}
+        </div>
+        {/* //? Category */}
+        <div>
+          {addCategoryBtn && (
+            <Tooltip title="Add Category">
+              <IconButton onClick={() => history.push(addCategoryBtn)}>
+                <BsPlusLg />
+              </IconButton>
+            </Tooltip>
+          )}
+        </div>
+        {/* //? Interest */}
+        <div>
+          {addInterestBtn && (
+            <Tooltip title="Add Interest">
+              <IconButton onClick={() => history.push(addInterestBtn)}>
+                <BsPlusLg />
               </IconButton>
             </Tooltip>
           )}

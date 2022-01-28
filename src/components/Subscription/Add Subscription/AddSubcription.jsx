@@ -1,5 +1,11 @@
+import Page from "../../Page/Page";
+
 const AddSubscripton = () => {
-  return <h1>Add Subscription Component</h1>;
+  return (
+    <Page compName="Add Subscription Plan">
+      <h1>Add Subscription Comp</h1>
+    </Page>
+  );
 };
 
 export default AddSubscripton;

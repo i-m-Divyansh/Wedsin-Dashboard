@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  min-height: 500px;
+  background-color: white;
+}
+
+.formWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+
+  position: relative;
+}
+
+.formWrapper > div {
+  width: 100%;
+}
+
+.button {
+  position: absolute;
+  width: auto;
+  bottom: 30px;
+  left: 30px;
+
+  padding: 15px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3b86ff;
+  color: white;
+  cursor: pointer;
+}
+
+.buttonLoading {
+  position: absolute;
+  width: auto;
+  bottom: 30px;
+  left: 30px;
+
+  padding: 15px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3b86ff;
+  color: white;
+  cursor: wait;
+}

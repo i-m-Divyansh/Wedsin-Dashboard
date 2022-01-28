@@ -6,7 +6,13 @@ import styles from "./Page.module.css";
 import Sidebar from "../Sidebar/Sidebar";
 import Header from "../Header/Header";
 
-const Page = ({ compName, addSubscriptionBtn, children }) => {
+const Page = ({
+  compName,
+  addSubscriptionBtn,
+  addCategoryBtn,
+  addInterestBtn,
+  children,
+}) => {
   return (
     <>
       <div className={styles.page_container}>
@@ -16,6 +22,10 @@ const Page = ({ compName, addSubscriptionBtn, children }) => {
             compName={compName}
             //? Subscription
             addSubscriptionBtn={addSubscriptionBtn}
+            //? Category
+            addCategoryBtn={addCategoryBtn}
+            //? Interest
+            addInterestBtn={addInterestBtn}
           />
           <div className={styles.component_content}>{children}</div>
         </div>

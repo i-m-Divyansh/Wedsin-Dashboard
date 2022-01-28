@@ -13,7 +13,7 @@ const Users = () => {
   let dispatch = useDispatch();
 
   //? useSelector
-  let { users } = useSelector((state) => state.Users);
+  let { users, loading } = useSelector((state) => state.Users);
 
   console.log("users in users components", users);
 
@@ -26,6 +26,7 @@ const Users = () => {
   return (
     <Page compName="Users">
       <Table columns={columns} rows={users} />
+      {loading && <h1>Loading...</h1>}
     </Page>
   );
 };

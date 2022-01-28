@@ -38,7 +38,7 @@ export default function BasicTable(props) {
               return (
                 <TableRow>
                   <TableCell component="th" scope="row">
-                    <p>{row.categoryName ? row.categoryName : "N/A"}</p>
+                    <p>{row.interestName ? row.interestName : "N/A"}</p>
                   </TableCell>
 
                   <TableCell component="th" scope="row">

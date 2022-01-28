@@ -9,7 +9,7 @@ const getCategoriesAction = () => async (dispatch) => {
       type: actionTypes.GET_CATEGORIES_REQUEST,
     });
 
-    let { data } = await Axios.get("/api/v1/getCategories");
+    let { data } = await Axios.get("/api/v1/admin/get/categories");
 
     console.log("data in getCategoriesAction", data);
 
