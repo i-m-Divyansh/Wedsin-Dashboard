@@ -1,0 +1,18 @@
+.page_container {
+  width: 100%;
+  min-height: 100vh;
+  position: sticky;
+  top: 10%;
+  display: flex;
+  background-color: #e5e5e5;
+}
+
+.page_content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.component_content {
+  padding: 1%;
+}
